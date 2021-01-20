@@ -7,9 +7,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 function App() {
   return (
-    
     <div className="App">
-      
       <nav>
         <NavBar/>
         <Breadcrumbs/>

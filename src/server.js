@@ -12,12 +12,11 @@ app.use(cors());
 const admin = require('firebase-admin');
 
 
-
 const serviceAccount = require("./functions/serviceAccountKey.json");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
-  });
+});
   
 const db = admin.firestore();
 
@@ -37,6 +36,14 @@ app.get('/products', async (req, res) => {
 app.listen(4001, () =>
     console.log('Express server is running on localhost:8080')
 );
+
+
+
+
+
+
+
+
 
 const mockProducts = [
     {
